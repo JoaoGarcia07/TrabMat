@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+  max-width: 1100px;
+  padding: 0 2%;
+  display: flex;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 80px;
+}
+
+.logo {
+  margin-top: 25px;
+  color: #0bddfd;
+}
+
+.menu-container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu-container a.active-menu {
+  background-color: #0bddfd;
+}
+
+.menu-container a {
+  color: white;
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 0 10px;
+  line-height: 80px;
+  transition: 0.8s;
+}
+
+.menu-container a:hover {
+  color: rgb(255, 163, 126);
+}
+
+section.main {
+  position: relative;
+  min-height: 1000px;
+  background-image: url('../img/nike3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.text-chamada {
+  color: #333;
+  position: absolute;
+  bottom: 50px;
+  left: 150px;
+}
+
+
+.text-chamada h1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-chamada h3 {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.produtos {
+  background-color: lightgray;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+section.produtos h3 {
+  text-transform: uppercase;
+}
+
+.produtos-single {
+  text-align: left;
+}
+
+.produto-container {
+  width: 200px;
+  justify-content: space-around;
+
+}
+
+.produtos-single {
+  width: 100%;
+  margin: 0 10px;
+  justify-content: center;
+
+}
+
+.produtos-single h3 {
+  text-align: center;
+  background-color: #baece3;
+  border: 1px solid #333;
+  padding: 8px;
+  color: #333;
+}
+
+.produtos-single p {
+  background-color: white;
+  padding: 8px;
+  color: black;
+  height: 168px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.produtos-single img {
+
+  display: block;
+  height: 300px;
+  width: 330px;
+}
+
+.estilo {
+  background-color: #333;
+}
+
+footer {
+  background-color: #333;
+  padding: 40px 0;
+  color: white;
+  font-size: 16px;
+}
+
+footer h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #666;
+  font-size: 24px;
+}
+
+.social-icons li a:hover {
+  color: #333;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.produtos-container {
+  height: 550px;
+}
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  width: 300%;
+  animation: carousel 35s infinite;
+}
+
+.carousel img {
+  width: calc(100% / 4);
+  width: 400%;
+  height: 400px;
+
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/*sobre*/
+
+
+section.sobre {
+  padding: 80px 0;
+}
+
+.chamada-sobre {
+  width: 100%;
+  text-align: center;
+}
+
+.chamada-sobre h2 {
+  color: #124265;
+  text-transform: uppercase;
+}
+
+.chamada-sobre p {
+  font-size: 14px;
+  color: gray;
+  margin:10px 0;
+  text-align: center;
+}
+
+.conteudo-sobre {
+  display: flex;
+  width: 1000px;
+  margin-left: 24%;
+}
+
+.conteudo-sobre p {
+  margin: 0 60px;
+  text-align: left;
+}
+
+
+section.main-contato {
+
+}
